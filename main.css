@@ -111,6 +111,7 @@ p{
    .mweb{
        text-align: center;
        margin-top: 20px;
+       color: red;
    }
    .bigdiv{
        background-image: url(photos/bg.jpg);
