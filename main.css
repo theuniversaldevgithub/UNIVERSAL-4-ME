@@ -1,12 +1,18 @@
+
+/* nai wali font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@500&display=swap');
 *{
-    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 0.5mm;
+    transition: 0.2ms ;
+
 }
 
 #loading{
 	position: fixed;
 	width: 100%;
 	height: 100vh;
-	background: #fff
+	background: white
 	url("loading.gif")
 	 no-repeat center center;	
 	z-index: 99999;
@@ -26,7 +32,7 @@
 #total{
     font-weight: bold;
     font-size: 3.2rem;
-    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Teko', sans-serif;
     /* text-align: center; */
     letter-spacing: 1mm;
     color: rgb(255, 28, 28);
@@ -96,16 +102,14 @@ p{
     transform-origin: bottom left;
     color: white;
    }
-   .copy{
-       text-align: center;
-       margin-top: 20px;
-   }
+
+   
    #TUD{
-       color: blue;
+       color: white;
    }
    #TUD:hover{
        color: blue;
-      font-size: 20px;
+       font-size: 20px;
       
    }
    .mweb{
@@ -114,9 +118,10 @@ p{
        color: red;
    }
    .bigdiv{
-       background-image: url(photos/bg.jpg);
+       background-image: url(photos/img1.jpeg);
        background-repeat: no-repeat;
       background-size: cover;
+      /* background-size: 100%; */
       width: 100%;
       color: white;
       text-align: center;
@@ -223,7 +228,241 @@ margin-top: 1em;
 }
 .tip{
     text-align: center;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-bottom: 5px;
     color: white;
+}
+
+/* ye slider hai mera  */
+/* yaha se u4m ka slider hai  */
+.u4mslider{
+	overflow: hidden;
+	margin: auto;
+  
+}
+.u4mslider figure{
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 16s u4mslider infinite;
+}
+.u4mslider figure img {
+	width: 20%;
+	float: left;
+
+}
+@keyframes u4mslider{
+	0%{
+		left: 0;
+	}
+	20%{
+		left: 0;
+	}
+	25%{
+		left: -100%;
+
+	}
+	45%{
+		left: -100%;
+	}
+	50%{
+		left: -200%;
+	}
+	70%{
+		left: -200%;
+	}
+	75%{
+		left: -300%;
+	}
+	95%{
+		left: -300%;
+	}
+	100%{
+		left: -400%;
+	}
+}
+
+
+
+/* The footer is fixed to the bottom of the page */
+
+footer{
+	position: fixed;
+	bottom: 0;
+    background-color: rgb(0,1,31);
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+	
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	
+	padding: 50px 50px 60px 50px;
+	/* margin-top: 80px; */
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+
+.footer-distributed h3 span{
+	color:  #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  rgba(20,33,43,255);
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
 }
